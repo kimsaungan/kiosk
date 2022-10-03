@@ -22,10 +22,12 @@
     //getItem() : localstorage에서 값 호출
     const orderGetString=window.localStorage.getItem('order');
 
+    // parse() : 문자열을 배열로 변환
     const orderGetArr= JSON.parse(orderGetString);
 
     console.log(orderGetArr);
     console.log("orderGetArr의 type : "+typeof(orderGetArr));
+    console.log(orderGetArr[0].menu);
 
 </script>
 </body>
